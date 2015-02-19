@@ -23,7 +23,7 @@ module Sorenson
       end
 
       def self.host
-        ((RAILS_ENV['360LOCAL'].upcase == 'TRUE' &&  RAILS_ENV == 'development') || ['test', 'cucumber'].include?(RAILS_ENV)) ? 'http://localhost:3001' : 'http://360services.sorensonmedia.com'
+        ((Rails.env['360LOCAL'].upcase == 'TRUE' &&  Rails.env == 'development') || ['test', 'cucumber'].include?(Rails.env)) ? 'http://localhost:3000' : 'http://360services.sorensonmedia.com'
       end
 
       def self.post_to(url, payload = {})
