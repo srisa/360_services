@@ -4,7 +4,7 @@ require 'cucumber/rake/task'
 require 'echoe'
 
 
-Echoe.new('360_services', '1.1.1') do |p|
+Echoe.new('360_services', '1.1.3') do |p|
   p.description    = "Ruby bindings for Sorenson 360 Services"
   p.url            = "http://github.com/sorenson/360_services"
   p.author         = "Sorenson Media"
@@ -23,7 +23,6 @@ namespace :cucumber do
   Cucumber::Rake::Task.new(:ok, 'Run features that should pass') do |t|
     t.fork = true # You may get faster startup if you set this to false
     t.cucumber_opts = std_opts
-    t.rcov=true
   end
 end
 

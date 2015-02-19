@@ -4,5 +4,4 @@ lib/sorenson/.DS_Store
 pkg
 rerun.txt
 coverage
-360_services.gemspec
 fakeweb_cache
